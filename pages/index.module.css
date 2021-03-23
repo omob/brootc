@@ -1,0 +1,35 @@
+
+.headerSection {
+    display: flex;
+    min-height: 500px;
+    align-items: center;
+    color: #fff;
+    padding-top: 5%;
+    margin: auto;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.headerSection > div {
+    flex: 1;
+}
+
+.headerSection div:first-child {
+    max-width: 600px;
+}
+.headerSection div:last-child {
+    display: flex;
+    justify-content: center;
+}
+
+.headerSection h2 {
+    font-size: 64px;
+    color: #fff;
+    font-weight: bolder;
+    /* letter-spacing: -0.05em; */
+    line-height: 84px;
+    margin-bottom: 10px;
+}
+.headerSection p {
+    font-size: 24px;
+}
