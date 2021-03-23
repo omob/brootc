@@ -1,13 +1,22 @@
 
+.blogContainer {
+    background-color: #fff;
+}
+
+.container {
+    background-color: #273883;
+    padding: 0 3em;
+}
+
 .headerSection {
     display: flex;
     min-height: 500px;
     align-items: center;
     color: #fff;
-    padding-top: 5%;
     margin: auto;
     max-width: 1440px;
     margin: auto;
+    padding: 5% 0;
 }
 
 .headerSection > div {

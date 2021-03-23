@@ -1,13 +1,14 @@
 import Head from "next/head";
 import Image from "next/image";
+import NavHeader from "./Header";
 import styles from "./layout.module.css";
 
 const name = "Ayodeji Abodunrin";
 export const siteTitle = "Broot Consulting";
 
-export default function Layout({ children, home, bgColor }) {
+export default function Layout({ children, home, headerColorInverse }) {
   return (
-    <div className={styles.container} style={{ backgroundColor: bgColor }}>
+    <>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -23,25 +24,11 @@ export default function Layout({ children, home, bgColor }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-
-      <header className={styles.header}>
-        <div className={styles.logo}>
-          <Image priority src="/logo2.png" height={126} width={148} />
-        </div>
-        <div>
-          <ul>
-            <li>Home</li>
-            <li>Services</li>
-            <li>Insights & Blog</li>
-            <li>Career</li>
-            <li>Contact</li>
-          </ul>
-        </div>
-      </header>
-
-      <main>{children}</main>
-
+      <NavHeader invertColor ={headerColorInverse}/>
+      <div className={styles.container}>
+        <main>{children}</main>
+      </div>
       <footer>Footer</footer>
-    </div>
+    </>
   );
 }
