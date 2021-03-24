@@ -32,6 +32,9 @@ export default function Home() {
       <Layout headerColorInverse>
         <div className={`${styles.container} ${styles.bgblue}`}>
           <div className={`${styles.headerSection} ${styles.containerMax}`}>
+            <div className={`${styles.bulb} ${styles.smOnly}`}>
+              <Image src={"/lightbulb2.svg"} width={400} height={400} />
+            </div>
             <div>
               <h2>STRATEGY, INNOVATION & RESEARCH</h2>
               <p>
@@ -39,7 +42,7 @@ export default function Home() {
                 challenge current thinking to create a future not yet imagined
               </p>
             </div>
-            <div>
+            <div className={`${styles.bulb} ${styles.lgOnly}`}>
               <Image src={"/lightbulb2.svg"} width={400} height={400} />
             </div>
           </div>

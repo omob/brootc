@@ -11,6 +11,8 @@
     padding: 0 3em;
 }
 
+
+
 .header.inverse {
     background-color: #273883;
 }
@@ -36,4 +38,23 @@
     color: #fff;
     font-weight: bold;
     letter-spacing: 1px;
+}
+
+@media (max-width: 550px) {
+    .container {
+        padding: 10px;
+    }
+    .logo {
+        width: 100px;
+    }
+
+    .header ul {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header ul {
+        margin-right: 0;
+    }
 }

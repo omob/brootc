@@ -16,10 +16,10 @@ const NavHeader = ({ invertColor }) => {
           <div>
             <ul>
               <li>Home</li>
-              <li>Services</li>
+              {/* <li>Services</li> */}
               <li>Insights & Blog</li>
-              <li>Career</li>
-              <li>Contact</li>
+              {/* <li>Career</li> */}
+              {/* <li>Contact</li> */}
             </ul>
           </div>
         </header>
