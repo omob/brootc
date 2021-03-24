@@ -1,11 +1,32 @@
 
+
+.articlesWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 .blogContainer {
     background-color: #fff;
 }
 
 .container {
+    padding: 2em 3em;
+}
+
+.bgblue {
     background-color: #273883;
-    padding: 0 3em;
+}
+
+.pt1 {
+    padding-top: 1em;
+}
+.pt2 {
+    padding-top: 2em;
+}
+
+.containerMax {
+    max-width: 1440px;
+    margin: auto;
 }
 
 .headerSection {
@@ -13,8 +34,6 @@
     min-height: 500px;
     align-items: center;
     color: #fff;
-    margin: auto;
-    max-width: 1440px;
     margin: auto;
     padding: 5% 0;
 }

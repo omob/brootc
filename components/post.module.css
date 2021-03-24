@@ -1,0 +1,30 @@
+.authorImage {
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+}
+.container {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 10px #eee;
+    padding: 10px;
+    margin-right: 20px;
+    max-width: 300px;
+}
+
+.contentWrapper {
+    width: 250px
+}
+
+.contentWrapper > div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.number {
+    font-weight: bold;
+    margin-right: 10px;
+}
