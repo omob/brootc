@@ -35,11 +35,13 @@
 .header ul li {
     list-style-type: none;
     margin: 10px;
-    color: #fff;
     font-weight: bold;
     letter-spacing: 1px;
 }
 
+.header ul li a {
+color: inherit;
+}
 @media (max-width: 550px) {
     .container {
         padding: 10px;

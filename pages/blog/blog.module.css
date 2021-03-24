@@ -1,0 +1,43 @@
+.authorImage {
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.container {
+    padding: 2em 3em;
+}
+.headerSection {
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.headerSection h2 {
+    font-size: 48px;
+    max-width: 800px;
+    text-align: center;
+    margin: 0;
+}
+
+.headerSection p {
+    text-align: center;
+    max-width: 80%;
+}
+
+.containerMax {
+    max-width: 1440px;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+}

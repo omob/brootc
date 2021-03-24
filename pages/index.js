@@ -10,15 +10,24 @@ export default function Home() {
 
   const [articles, setArticles] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState();
 
   useEffect(() => {
    const getArticles = async () => {
-     setLoading(true)
-     const response =  await fetch("https://conduit.productionready.io/api/articles?limit=9");
-     const { articles } = await response.json();
-     setArticles(articles);
-     console.log(articles);
-    setLoading(false)
+     try {
+       setLoading(true)
+       const response =  await fetch("https://conduit.productionready.io/api/articles?limit=9");
+       const { articles } = await response.json();
+       setArticles(articles);
+       console.log(articles);
+      setLoading(false)
+      setError(null);
+       
+     } catch (error) {
+        setLoading(false);
+       setError("Something went wrong... Try again later.");
+       console.log(error)
+     }
    }
 
    getArticles();
@@ -53,6 +62,7 @@ export default function Home() {
         >
           <h3 style={{ textAlign: "center" }}>Now Trending on BrootC</h3>
           {loading && <p style={{ textAlign: "center" }}>Loading...</p>}
+          {error && <p style={{ textAlign: "center" }}>{error}</p>}
 
           <div className={styles.articlesWrapper}>
             {articles &&
@@ -66,7 +76,11 @@ export default function Home() {
           style={{ backgroundColor: "#fafafa" }}
         >
           <h3 style={{ textAlign: "center" }}>Insights</h3>
-          {loading && <p style={{ textAlign: "center" }}>Loading...</p>}
+          {loading && !error && (
+            <p style={{ textAlign: "center" }}>Loading...</p>
+          )}
+
+          {error && <p style={{ textAlign: "center" }}>{error}</p>}
 
           <div className={styles.articlesWrapper}>
             {/* {articles &&

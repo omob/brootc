@@ -8,7 +8,6 @@ function PostCard({ item: post , index, bgStyle }) {
 
     const { title, body, author, createdAt, description, slug } = post;
 
-    console.log(slug)
     return (
       <div className={`${styles.container}`} style={bgStyle}>
         <span className={styles.number}>{index}</span>
