@@ -28,7 +28,7 @@ export default function Layout({ children, home, headerColorInverse }) {
       <div className={styles.container}>
         <main>{children}</main>
       </div>
-      <footer>Footer</footer>
+      <footer style={{textAlign: "center", padding: "2em", fontSize: "14px", letterSpacing: "4px"}}>Broot Consulting &copy; 2021</footer>
     </>
   );
 }

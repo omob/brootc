@@ -11,8 +11,6 @@
     padding: 0 3em;
 }
 
-
-
 .header.inverse {
     background-color: #273883;
 }
@@ -40,8 +38,9 @@
 }
 
 .header ul li a {
-color: inherit;
+    color: inherit;
 }
+
 @media (max-width: 550px) {
     .container {
         padding: 10px;

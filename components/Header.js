@@ -35,7 +35,7 @@ const router = useRouter();
               </li>
               {/* <li>Services</li> */}
               <li>
-                  <a>Insights & Blog</a>
+                  Insights & Blog
               </li>
               {/* <li>Career</li> */}
               {/* <li>Contact</li> */}

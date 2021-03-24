@@ -71,7 +71,7 @@ export default function Home() {
               ))}
           </div>
         </div>
-        <div
+        {/* <div
           className={`${styles.container} ${styles.pt1}`}
           style={{ backgroundColor: "#fafafa" }}
         >
@@ -83,17 +83,17 @@ export default function Home() {
           {error && <p style={{ textAlign: "center" }}>{error}</p>}
 
           <div className={styles.articlesWrapper}>
-            {/* {articles &&
-              articles.map((article, index) => (
+            {articles &&
+              ([...articles].splice(6)).map((article, index) => (
                 <PostCard
                   bgStyle={{ backgroundColor: "#fff" }}
                   key={index}
                   index={"0" + ++index}
                   item={article}
                 />
-              ))} */}
+              ))}
           </div>
-        </div>
+        </div> */}
       </Layout>
     </>
   );
