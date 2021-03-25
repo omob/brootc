@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import Image from "next/image";
 
 import styles from "./news.module.css";
 
@@ -16,8 +17,11 @@ function NewsCard({ item }) {
             height: "150px",
             backgroundColor: "#fafafa",
             marginTop: "10px",
+            position: "relative"
           }}
-        ></div>
+        >
+            <Image src="/bgImage.png" layout="fill" />
+        </div>
         <div style={{ display: "flex" }}>
           <h3 style={{ fontSize: "14px", width: "90%" }}>{title}</h3>
           <span
