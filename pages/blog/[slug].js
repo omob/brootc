@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Layout from '../../components/Layout';
 import { useRouter } from "next/router";
 import styles from "./blog.module.css";
+import Link from 'next/link';
 
 export async function getStaticProps({ params }) {
 
@@ -130,8 +131,22 @@ useEffect(() => {
             <div style={{ textAlign: "center", margin: "3em" }}>
               <Image src="/lightbulb.svg" width="400" height="400" />
 
-              <p style={{lineHeight: "1.8em", maxWidth: "800px", margin: "2em auto"}}>{article.body}</p>
+              <p
+                style={{
+                  lineHeight: "1.8em",
+                  maxWidth: "800px",
+                  margin: "2em auto",
+                }}
+              >
+                {article.body}
+              </p>
             </div>
+
+            <p style={{textAlign: "center", color: "#0FAD4C", marginBottom: "5em"}}>
+              <Link href="/">
+                <a style={{color: "inherit"}}>&#8592; Back to Home</a>
+              </Link>
+            </p>
           </>
         )}
       </Layout>

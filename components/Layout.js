@@ -13,7 +13,7 @@ export default function Layout({ children, home, headerColorInverse }) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="Broot Consulting Blog"
         />
         <meta
           property="og:image"
@@ -28,7 +28,7 @@ export default function Layout({ children, home, headerColorInverse }) {
       <div className={styles.container}>
         <main>{children}</main>
       </div>
-      <footer style={{textAlign: "center", padding: "2em", fontSize: "14px", letterSpacing: "4px"}}>Broot Consulting &copy; 2021</footer>
+      <footer style={{textAlign: "center", padding: "2em", fontSize: "14px", letterSpacing: "4px", backgroundColor: "#fafafa"}}>Broot Consulting &copy; 2021</footer>
     </>
   );
 }

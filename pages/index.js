@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { useEffect, useState } from 'react';
 import NavHeader from '../components/Header';
 import Layout, { siteTitle} from '../components/Layout'
+import NewsCard from '../components/NewsCard';
 import PostCard from '../components/PostCard';
 import styles from "./index.module.css";
 
@@ -56,6 +57,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+
         <div
           className={`${styles.container} ${styles.pt1}`}
           style={{ maxWidth: "1200px", margin: "auto" }}
@@ -71,40 +73,33 @@ export default function Home() {
               ))}
           </div>
         </div>
+
         <div
           className={`${styles.container} ${styles.pt1}`}
-          style={{ backgroundColor: "#fafafa" }}
+          // style={{ backgroundColor: "#fafafa" }}
         >
-          <h3 style={{ textAlign: "center" }}>Latest News & Events</h3>
-          {loading && !error && (
-            <p style={{ textAlign: "center" }}>Loading...</p>
-          )}
+          <div
+            style={{
+              maxWidth: "1200px",
+              margin: "auto",
+            }}
+          >
+            <h3 style={{ textAlign: "center" }}>Latest News & Events</h3>
+            {loading && <p style={{ textAlign: "center" }}>Loading...</p>}
+            {error && <p style={{ textAlign: "center" }}>{error}</p>}
 
-          {error && <p style={{ textAlign: "center" }}>{error}</p>}
-
-          {/* <div className={styles.articlesWrapper}>
-            {articles &&
-              ([...articles].splice(6)).map((article, index) => (
-                <div>
-                  <span>{article.createdDate}</span>
-                  <div>
-
-                  </div>
-              ))}
-          </div> */}
-
-          <div style={{width: "300px"}}>
-            <span style={{fontSize: "12px"}}>23rd March</span>
-            <div style={{height: "150px", backgroundColor: "#fefefe"}}></div>
-            <div style={{display: "flex"}}>
-              <h3 style={{fontSize: "14px"}}>
-                Submit your Medium story to Start it up publication in two easy
-                steps
-              </h3>
-              <span style={{fontSize: "12px", width: "100px", height: "50px", display: "flex", "alignItems": "center"}}>Read More</span>
+            <div className={styles.articlesWrapper}>
+              {articles &&
+                [...articles]
+                  .splice(6)
+                  .map((article, index) => (
+                    <NewsCard key={index} item={article} />
+                  ))}
             </div>
           </div>
         </div>
+
+        <div className={styles.container}></div>
       </Layout>
     </>
   );

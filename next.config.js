@@ -5,6 +5,7 @@ module.exports = {
       "www.russianpromo.ru",
       "steamcdn-a.akamaihd.net",
       "steamcdn-a.akam",
+      "avatars.mds.yandex.net",
     ],
   },
 };
