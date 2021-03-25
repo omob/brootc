@@ -7,7 +7,7 @@ function NewsCard({ item }) {
 
         const { title, body, author, createdAt, description, slug } = item;
     return (
-      <div style={{ maxWidth: "300px", margin: "10px" }}>
+      <div className={styles.container}>
         <span style={{ fontSize: "10px" }}>
           {new Date(createdAt).toDateString()}
         </span>
