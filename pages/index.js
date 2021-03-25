@@ -49,7 +49,7 @@ export default function Home() {
               <h2>STRATEGY, INNOVATION & RESEARCH</h2>
               <p>
                 We deploy both intuitive and analytical skills and continuously
-                challenge current thinking to create a future not yet imagined
+                challenge current thinking to create a future not yet imagined.
               </p>
             </div>
             <div className={`${styles.bulb} ${styles.lgOnly}`}>
