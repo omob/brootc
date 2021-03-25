@@ -71,30 +71,49 @@ export default function Home() {
               ))}
           </div>
         </div>
-        {/* <div
+        <div
           className={`${styles.container} ${styles.pt1}`}
           style={{ backgroundColor: "#fafafa" }}
         >
-          <h3 style={{ textAlign: "center" }}>Insights</h3>
+          <h3 style={{ textAlign: "center" }}>Latest News & Events</h3>
           {loading && !error && (
             <p style={{ textAlign: "center" }}>Loading...</p>
           )}
 
           {error && <p style={{ textAlign: "center" }}>{error}</p>}
 
-          <div className={styles.articlesWrapper}>
+          {/* <div className={styles.articlesWrapper}>
             {articles &&
               ([...articles].splice(6)).map((article, index) => (
-                <PostCard
-                  bgStyle={{ backgroundColor: "#fff" }}
-                  key={index}
-                  index={"0" + ++index}
-                  item={article}
-                />
+                <div>
+                  <span>{article.createdDate}</span>
+                  <div>
+
+                  </div>
               ))}
+          </div> */}
+
+          <div style={{width: "300px"}}>
+            <span style={{fontSize: "12px"}}>23rd March</span>
+            <div style={{height: "150px", backgroundColor: "#fefefe"}}></div>
+            <div style={{display: "flex"}}>
+              <h3 style={{fontSize: "14px"}}>
+                Submit your Medium story to Start it up publication in two easy
+                steps
+              </h3>
+              <span style={{fontSize: "12px", width: "100px", height: "50px", display: "flex", "alignItems": "center"}}>Read More</span>
+            </div>
           </div>
-        </div> */}
+        </div>
       </Layout>
     </>
   );
 }
+
+    // font-size: 12px;
+    // width: 100px;
+    // /* display: inline-block; */
+    // height: 50px;
+    // display: flex;
+    // align-items: center;
+    // justify-content: flex-end;

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
 html,
 body {
@@ -10,6 +11,7 @@ body {
   line-height: 1.6;
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -36,7 +38,11 @@ img {
 }
 
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
   font-family: 'Libre Baskerville', serif;
-  font-weight: bold;
+  font-weight: bolder;
+}
+
+h4, h5 {
+  font-family: 'Open Sans', sans-serif;
 }
