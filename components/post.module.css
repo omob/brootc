@@ -32,4 +32,5 @@ box-shadow: none;
 .number {
     font-weight: bold;
     margin-right: 10px;
+    opacity: .1;
 }

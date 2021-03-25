@@ -8,7 +8,7 @@ function NewsCard({ item }) {
         const { title, body, author, createdAt, description, slug } = item;
     return (
       <div className={styles.container}>
-        <span style={{ fontSize: "10px" }}>
+        <span style={{ fontSize: "10px", color: "gray", fontWeight: "100" }}>
           {new Date(createdAt).toDateString()}
         </span>
         <div
@@ -29,7 +29,7 @@ function NewsCard({ item }) {
             }}
           >
             <Link href={`/blog/${slug}`}>
-              <a style={{color: "inherit"}}>Read More</a>
+              <a style={{ color: "gray", fontWeight: "100" }}>Read More</a>
             </Link>
           </span>
         </div>
