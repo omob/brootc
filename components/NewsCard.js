@@ -29,12 +29,11 @@ function NewsCard({ item }) {
             }}
           >
             <Link href={`/blog/${slug}`}>
-              <a style={{ color: "gray", fontWeight: "100" }}>Read More</a>
+              <a style={{ color: "gray", fontSize: "10px", fontWeight: "100", border: "1px solid", borderRadius: "20px", padding: "2px 8px" }}>Read More</a>
             </Link>
           </span>
         </div>
       </div>
     );
 }
-
 export default NewsCard;
